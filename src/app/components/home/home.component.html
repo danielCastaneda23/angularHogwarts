@@ -1,0 +1,25 @@
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand px-2" routerLink="/">Hogwarts</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ">
+      <li class="nav-item active">
+        <a class="nav-link"  routerLink="person">Person </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="student">Student</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="teacher">Teacher</a>
+      </li>
+      <li class="nav-item " >
+        <a class="nav-link {{!show ? 'disabled' : '' }}" routerLink="requestlist">Request List</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="row mx-0 h1 justify-content-center" *ngIf="_router.url == '/'" style="margin-top: 250px;">Hogwarts Institutional Portal</div>
+</div>
